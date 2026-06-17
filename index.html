@@ -1,48 +1,184 @@
-<h1 align="center">Hi 👋, I'm Tanish_Mannz</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanish_Mannz | Portfolio</title>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=00FFAA&center=true&vCenter=true&width=500&lines=Arduino+Enthusiast;Robotics+Lover;Coding+Explorer;Future+Engineer" />
-</p>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Consolas,monospace;
+}
 
----
+body{
+    background:#ffffff;
+    color:#111;
+}
 
-### 🚀 About Me
-- 🤖 Arduino & Electronics Enthusiast
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+h1{
+    color:#00aa55;
+    font-size:3rem;
+}
+
+.typing{
+    color:#00aa55;
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+section{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+}
+
+.card{
+    background:#f5f5f5;
+    border-left:5px solid #00aa55;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+}
+
+.skill{
+    margin:15px 0;
+}
+
+.bar{
+    background:#ddd;
+    height:20px;
+    border-radius:10px;
+}
+
+.progress{
+    background:#00aa55;
+    height:20px;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Tanish_Mannz</h1>
+<p class="typing" id="typing"></p>
+</header>
+
+<section>
+
+<div class="card">
+<h2>🚀 About Me</h2>
+<p>Arduino Enthusiast | Robotics Lover | Future Engineer
 - 💻 Learning Programming
-- 🚗 Builded Bluetooth Controlled Cars
 - 🌱 Always Learning New Things
-- 👨‍💻 Coding all the time
-- @  Email :- tanishxmannz@gmail.com 
-- ▶️ Youtube :- https://m.youtube.com/@Tanish_Mannz
+- 👨‍💻 Coding all the time</p>
+<p>Gamer</p>
+<p>Making a game</p>
+</divĺ
 
----
+<div class="card">
+<h2>💻 Skills</h2>
 
-### 🛠️ Skills
+<div class="skill">
+<p>C++|Topper of the school</p>
+<p>"Hacker Style Developer",
+"C++ Programmer",
+"HTML Creator",
+"JavaScript Learner",
+"Arduino Enthusiast"</p>
+<div class="bar">
+<div class="progress" style="width:90%"></div>
+</div>
+</div>
 
-<p>
-  <img src="https://skillicons.dev/icons?i=arduino,cpp,python,github,vscode" />
-</p>
+<div class="skill">
+<p>HTML</p>
+<div class="bar">
+<div class="progress" style="width:85%"></div>
+</div>
+</div>
 
----
+<div class="skill">
+<p>JavaScript</p>
+<div class="bar">
+<div class="progress" style="width:75%"></div>
+</div>
+</div>
 
-### 📊 GitHub Stats
+</div>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight" />
-</p>
+<div class="card">
+<h2>📧 Contact</h2>
+<p>Email: tanishxmannz@gmail.com</p>
+<p>YouTube: @Tanish_Mannz</p>
+</div>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight" />
-</p>
+<div class="card">
+<h2>⚡ Hacker Mindset</h2>
 
----
+<pre>
+while(!success){
+   learn();
+   build();
+   improve();
+}
+</pre>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake.svg" />
-</p>
+</div>
 
----
+</section>
 
-<p align="center">
-  ⭐ Thanks for visiting my profile!😏
-</p>
+<footer>
+⭐ Thanks for Visiting
+</footer>
+
+<script>
+const text = [
+"Hacker Style Developer",
+"C++ Programmer",
+"HTML Creator",
+"JavaScript Learner",
+"Arduino Enthusiast"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+    if(count === text.length){
+        count = 0;
+    }
+
+    currentText = text[count];
+    letter = currentText.slice(0, ++index);
+
+    document.getElementById("typing").textContent = letter;
+
+    if(letter.length === currentText.length){
+        count++;
+        index = 0;
+        setTimeout(type, 1200);
+    }else{
+        setTimeout(type, 100);
+    }
+})();
+</script>
+
+</body>
+</html>
